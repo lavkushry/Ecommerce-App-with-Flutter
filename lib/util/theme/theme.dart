@@ -1,5 +1,9 @@
 
 import 'package:ecom_app/util/theme/custom_themes/appbar_theme.dart';
+import 'package:ecom_app/util/theme/custom_themes/bottom_sheet_theme.dart';
+import 'package:ecom_app/util/theme/custom_themes/checkbox_theme.dart';
+import 'package:ecom_app/util/theme/custom_themes/outlined_button_theme.dart';
+import 'package:ecom_app/util/theme/custom_themes/text_field_theme.dart';
 import 'package:ecom_app/util/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +20,13 @@ class TAppTheme{
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     textTheme: TTextTheme.lightTextTheme,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
+    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    appBarTheme: TAppBarTheme.lightAppBarTheme
+    inputDecorationTheme:TTextFormFieldTheme.lightInputDecorationTheme,
+
   );
 
 
@@ -28,8 +37,12 @@ class TAppTheme{
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
+    appBarTheme: TAppBarTheme.darkAppBarTheme,
+    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-      appBarTheme: TAppBarTheme.darkAppBarTheme
+    inputDecorationTheme:TTextFormFieldTheme.darkInputDecorationTheme,
   );
 
 }
