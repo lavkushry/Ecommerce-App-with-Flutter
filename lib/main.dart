@@ -10,5 +10,5 @@ void main() {
 
   runApp(const App());
 }
-/// Use this class to Setup Cusotm THeme, Inital Binding, and Any Animations
+/// Use this class to Setup Custom THeme, Initial Binding, and Any Animations
 
