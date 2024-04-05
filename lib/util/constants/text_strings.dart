@@ -44,4 +44,10 @@ class TText{
   static const String confirmEmail = "Verify your email address!";
   static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
 
+  //-- Account Created
+  static const String accountCreatedTitle = "Account Created Successfully";
+  static const String accountCreatedSubTitle = "Congratulations! Your Account Has Been Successfully Created. Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
+  static const String accountCreatedButtonText = "Continue Shopping";
+
+
 }
