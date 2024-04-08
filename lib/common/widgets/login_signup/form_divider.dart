@@ -3,7 +3,7 @@ import 'package:ecom_app/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../util/constants/colors.dart';
+import '../../../util/constants/colors.dart';
 
 class TFormDivider extends StatelessWidget {
   const TFormDivider({

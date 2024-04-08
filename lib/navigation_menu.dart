@@ -1,7 +1,6 @@
 import 'package:ecom_app/features/shop/screens/home/home.dart';
 import 'package:ecom_app/util/constants/colors.dart';
 import 'package:ecom_app/util/helpers/helper_functions.dart';
-import 'package:ecom_app/util/http/http_client.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -24,6 +23,7 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index)=> controller.selectedIndex.value = index,
           backgroundColor: darkMode ? TColors.black : TColors.white,
           indicatorColor: darkMode ? TColors.white.withOpacity(0.1) : TColors.black.withOpacity(0.1),
+          
           destinations: const [
              NavigationDestination(icon:  Icon(Iconsax.home), label: 'Home'),
              NavigationDestination(icon:  Icon(Iconsax.shop), label: 'Store'),

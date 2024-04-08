@@ -53,4 +53,65 @@ class TText{
   static const String accountCreatedButtonText = "Continue Shopping";
 
 
+  // -- Privacy policy and Terms of use
+  static const String privacyPolicyText = "By continuing, you agree to our Privacy Policy and Terms of Use.";
+  static const String termsOfUseText = ''' Terms of Use for RealRoadies
+
+Effective Date: 1-JAN-2024
+
+Acceptance of Terms
+
+By accessing or using the RealRoadies mobile app, you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree, do not use RealRoadies.
+
+Changes to Terms
+
+We may update these Terms at any time. Continued use of the app after any changes indicates your acceptance of the new Terms.
+
+Use of RealRoadies
+
+RealRoadies is for personal use. You agree not to misuse the app or help anyone else do so.
+
+Account Creation
+
+You must create an account to access certain features. You are responsible for keeping your account details secure. You must be above 18 YEARS OLD to create an account 
+
+Content You Provide
+
+You retain rights to the content you submit, but you grant us a license to use, modify, perform, display, reproduce, and distribute such content on and through the service.
+
+Prohibited Conduct
+
+You agree not to engage in conduct that is harmful,pornography,child abuse, illegal, or violates others' rights.
+
+Buying, Selling, and Renting Bikes
+
+Transactions for buying, selling, or renting bikes are governed by specific terms that you must agree to before completing any transaction. At present we only connect the interested parties. It is up to you to secure your interest in any commerical transaction.
+
+Intellectual Property
+
+The app and its original content, features, and functionality are owned by RealRoadies and are protected by copyright, trademark, and other laws.
+
+Termination
+
+We may terminate or suspend your account and access to the app if you violate these Terms.
+
+Disclaimer and Limitation of Liability
+
+RealRoadies is provided "as is". We disclaim all warranties and will not be liable for any harm arising from your use of the app.
+
+Governing Law
+
+These Terms are governed by the international laws.
+
+Feedback
+
+We welcome your feedback and suggestions for RealRoadies.
+
+Contact Us
+
+For any questions about these Terms, please contact us at hello@stipe.so
+
+''';
+
+
 }

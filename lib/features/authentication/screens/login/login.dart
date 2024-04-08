@@ -1,6 +1,6 @@
 import 'package:ecom_app/common/styles/spacing_styles.dart';
-import 'package:ecom_app/common/widgets_login_signup/form_divider.dart';
-import 'package:ecom_app/common/widgets_login_signup/social_buttons.dart';
+import 'package:ecom_app/common/widgets/login_signup/form_divider.dart';
+import 'package:ecom_app/common/widgets/login_signup/social_buttons.dart';
 import 'package:ecom_app/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:ecom_app/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:ecom_app/util/constants/sizes.dart';
@@ -10,7 +10,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

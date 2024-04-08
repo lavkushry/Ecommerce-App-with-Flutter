@@ -1,19 +1,23 @@
 import 'package:ecom_app/features/authentication/screens/signup/verify_email.dart';
-import 'package:ecom_app/util/constants/colors.dart';
 import 'package:ecom_app/util/constants/sizes.dart';
 import 'package:ecom_app/util/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../../../../util/helpers/helper_functions.dart';
 import 'terms_condition_checkbox.dart';
 
-class TSignupForm extends StatelessWidget {
+class TSignupForm extends StatefulWidget {
   const TSignupForm({
     super.key,
   });
 
+  @override
+  _TSignupFormState createState() => _TSignupFormState();
+
+}
+
+class _TSignupFormState extends State<TSignupForm> {
+  bool _isAgreedToTerms = false;
 
   @override
   Widget build(BuildContext context) {
@@ -82,13 +86,19 @@ class TSignupForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           ///Terms and Conditions
-          const TTermsAndConditionCheckbox(),
+          TTermsAndConditionCheckbox(
+            onCheckboxChanged: (value) {
+              setState(() {
+                _isAgreedToTerms = value?? false;
+              });
+            },
+          ),
           const SizedBox(height: TSizes.spaceBtwSections),
           ///Sign Up Button
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(() => const VerifyEmailScreen()),
+              onPressed: _isAgreedToTerms ? () => Get.to(() => const VerifyEmailScreen()) :null,
               child: Text(TText.createAccount),
             ),
           ),
