@@ -48,7 +48,7 @@ Contributions are welcome. Please read the contributing guidelines before making
 
 ## Author
 
-The project is developed by lavkushry1. You can reach out to him on his [GitHub profile](https://github.com/lavkushry1).
+The project is developed by lavkushry1. You can reach out to him on his [GitHub profile](https://github.com/lavkushry).
 
 ## License
 
