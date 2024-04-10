@@ -6,9 +6,7 @@ import 'package:ecom_app/features/authentication/screens/login/widgets/login_hea
 import 'package:ecom_app/util/constants/sizes.dart';
 import 'package:ecom_app/util/constants/text_strings.dart';
 import 'package:ecom_app/util/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -27,7 +25,7 @@ class LoginScreen extends StatelessWidget {
               TLoginHeader(dark: dark),
 
               ///Form
-              TLoginForm(),
+              const TLoginForm(),
 
               /// Divider
               TFormDivider(dividerText: TText.orSignInWith.capitalize!),
@@ -35,7 +33,7 @@ class LoginScreen extends StatelessWidget {
 
               /// Footer
 
-              TSocialButtons()
+              const TSocialButtons()
             ],
           ),
         ),

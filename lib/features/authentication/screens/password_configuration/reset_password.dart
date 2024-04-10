@@ -1,9 +1,7 @@
 import 'package:ecom_app/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:ecom_app/util/constants/sizes.dart';
 import 'package:ecom_app/util/constants/text_strings.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,7 +13,7 @@ class ForgotPassword extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body:  Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -27,7 +25,7 @@ class ForgotPassword extends StatelessWidget {
 
               /// Text Field
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText:TText.email,
                   prefixIcon: Icon(Iconsax.direct_right),
                 ),

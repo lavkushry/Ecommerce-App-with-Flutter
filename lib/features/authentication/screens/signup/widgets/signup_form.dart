@@ -99,7 +99,7 @@ class _TSignupFormState extends State<TSignupForm> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: _isAgreedToTerms ? () => Get.to(() => const VerifyEmailScreen()) :null,
-              child: Text(TText.createAccount),
+              child: const Text(TText.createAccount),
             ),
           ),
         ],

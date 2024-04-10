@@ -23,7 +23,7 @@ class TTermsAndConditionCheckbox extends StatelessWidget {
           content: SingleChildScrollView(child: Text(content)),
           actions: <Widget>[
             TextButton(
-              child: Text('Close'),
+              child: const Text('Close'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -56,7 +56,7 @@ class TTermsAndConditionCheckbox extends StatelessWidget {
             child: InkWell(
               onTap: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PrivacyPolicyScreen()),
+                MaterialPageRoute(builder: (context) => const PrivacyPolicyScreen()),
               ),
               child: Text('${TText.privacyPolicy} ',
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
