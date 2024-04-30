@@ -52,6 +52,10 @@ class TText{
   static const String accountCreatedSubTitle = "Congratulations! Your Account Has Been Successfully Created. Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
   static const String accountCreatedButtonText = "Continue Shopping";
 
+  // -- Home App bar
+  static const String homeAppBarTitle = "Good day for shopping";
+  static const String homeAppBarSubTitle = "Lavkush Kumar";
+
 
   // -- Privacy policy and Terms of use
   static const String privacyPolicyText = "By continuing, you agree to our Privacy Policy and Terms of Use.";

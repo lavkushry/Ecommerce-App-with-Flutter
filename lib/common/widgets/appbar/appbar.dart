@@ -1,7 +1,6 @@
 import 'package:ecom_app/util/constants/sizes.dart';
 import 'package:ecom_app/util/device%20/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -25,16 +24,16 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
       child: AppBar(
-        automaticallyImplyLeading: true,
+        automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
-                onPressed: () => Get.back(),
-                icon: const Icon(Iconsax.arrow_left))
+            onPressed: leadingOnPressed ?? () {},
+            icon: const Icon(Iconsax.arrow_left))
             : leadingIcon != null
-                ? IconButton(
-                    onPressed: leadingOnPressed,
-                    icon: Icon(leadingIcon))
-                : null,
+            ? IconButton(
+            onPressed: leadingOnPressed,
+            icon: Icon(leadingIcon))
+            : null,
         title: title,
         actions: actions,
       ),
@@ -42,6 +41,5 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(TDeviceUtils.getAppBarHeight());
 }
