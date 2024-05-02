@@ -39,16 +39,17 @@ dev_dependencies:
 
   flutter_lints: ^3.0.0
 
-#---------------   Local Assets  --------------#
 
-#---------------   Local Fonts  --------------#
 flutter:
   uses-material-design: true
+
+  #----------------- Local Assets -----------------#
   assets:
     - assets/logos/
     - assets/images/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/icons/categories/
 
   fonts:
     - family: Poppins
